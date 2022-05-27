@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Lcw_GraduationProject.Application/1.0.0": {
+        "dependencies": {
+          "Lcw_GraduationProject.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Lcw_GraduationProject.Application.dll": {}
+        }
+      },
+      "Lcw_GraduationProject.Domain/1.0.0": {
+        "runtime": {
+          "Lcw_GraduationProject.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lcw_GraduationProject.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lcw_GraduationProject.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

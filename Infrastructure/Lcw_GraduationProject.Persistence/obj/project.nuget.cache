@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lntYj3gK3P8rd9Ff4q8qirof6BZg+KyWJXNlzMw/7Ln9a7mq93XvRM0QOVyFI2qF1uuid99/5KRcemnwQkREsg==",
+  "dgSpecHash": "5eTiVp8PsFldadrgsMJhik5o7a2VTQ8SzUcngYQgHYvUIZ6JxUQPnLqwtRqRavcsnJAc79/eKkQHwwIlnYp66A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Enes\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

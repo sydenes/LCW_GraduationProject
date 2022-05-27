@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Lcw_GraduationProject.Application\Lcw_GraduationProject.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Lcw_GraduationProject.Persistence\Lcw_GraduationProject.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

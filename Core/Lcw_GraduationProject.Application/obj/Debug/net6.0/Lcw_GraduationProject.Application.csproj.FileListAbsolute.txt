@@ -1,0 +1,15 @@
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.csproj.AssemblyReference.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.AssemblyInfoInputs.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.AssemblyInfo.cs
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\bin\Debug\net6.0\Lcw_GraduationProject.Application.deps.json
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\bin\Debug\net6.0\Lcw_GraduationProject.Application.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\bin\Debug\net6.0\ref\Lcw_GraduationProject.Application.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\bin\Debug\net6.0\Lcw_GraduationProject.Application.pdb
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\bin\Debug\net6.0\Lcw_GraduationProject.Domain.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\bin\Debug\net6.0\Lcw_GraduationProject.Domain.pdb
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.csproj.CopyComplete
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\ref\Lcw_GraduationProject.Application.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Application\obj\Debug\net6.0\Lcw_GraduationProject.Application.pdb

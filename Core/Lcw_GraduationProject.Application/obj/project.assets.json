@@ -27,24 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\enes.sagban\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Enes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
       "projectName": "Lcw_GraduationProject.Application",
-      "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
-      "packagesPath": "C:\\Users\\enes.sagban\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Core\\Lcw_GraduationProject.Application\\obj\\",
+      "projectPath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
+      "packagesPath": "C:\\Users\\Enes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Core\\Lcw_GraduationProject.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\enes.sagban\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj": {
-              "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj"
+            "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj": {
+              "projectPath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj"
             }
           }
         }
@@ -88,7 +83,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,17 @@
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.csproj.AssemblyReference.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.AssemblyInfoInputs.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.AssemblyInfo.cs
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Persistence.deps.json
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Persistence.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\ref\Lcw_GraduationProject.Persistence.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Persistence.pdb
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Application.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Domain.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Application.pdb
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Domain.pdb
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.csproj.CopyComplete
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\ref\Lcw_GraduationProject.Persistence.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.pdb
