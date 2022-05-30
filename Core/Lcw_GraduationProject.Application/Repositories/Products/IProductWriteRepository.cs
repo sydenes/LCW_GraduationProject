@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lcw_GraduationProject.Application.Abstractions
+namespace Lcw_GraduationProject.Application.Repositories.Products
 {
-    public interface IProductService
+    public interface IProductWriteRepository:IWriteRepository<Product>
     {
-        List<Product> GetProducts();
     }
 }

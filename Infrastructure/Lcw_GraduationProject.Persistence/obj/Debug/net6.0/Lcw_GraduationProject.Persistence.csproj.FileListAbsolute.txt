@@ -15,3 +15,5 @@ C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_Graduati
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.dll
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\ref\Lcw_GraduationProject.Persistence.dll
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.pdb
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\bin\Debug\net6.0\Lcw_GraduationProject.Persistence.runtimeconfig.json
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Infrastructure\Lcw_GraduationProject.Persistence\obj\Debug\net6.0\Lcw_GraduationProject.Persistence.genruntimeconfig.cache

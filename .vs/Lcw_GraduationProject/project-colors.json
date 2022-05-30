@@ -5,7 +5,12 @@
       "ProjectGuid": "4e3107d9-6990-469f-86ec-7e8c9a5aedb0",
       "DisplayName": "Lcw_GraduationProject.Persistence",
       "ColorIndex": 0
+    },
+    "72bf9a21-17ed-43b9-a940-bb34016224ee": {
+      "ProjectGuid": "72bf9a21-17ed-43b9-a940-bb34016224ee",
+      "DisplayName": "Lcw_GraduationProject.API",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

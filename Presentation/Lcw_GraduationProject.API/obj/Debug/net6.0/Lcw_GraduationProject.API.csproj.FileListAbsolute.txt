@@ -30,3 +30,13 @@ C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_Graduation
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\obj\Debug\net6.0\ref\Lcw_GraduationProject.API.dll
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\obj\Debug\net6.0\Lcw_GraduationProject.API.pdb
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\obj\Debug\net6.0\Lcw_GraduationProject.API.genruntimeconfig.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\obj\Debug\net6.0\Lcw_GraduationProject.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
