@@ -10,3 +10,15 @@ C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.dll
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\ref\Lcw_GraduationProject.Domain.dll
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.pdb
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\bin\Debug\net6.0\Lcw_GraduationProject.Domain.deps.json
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\bin\Debug\net6.0\Lcw_GraduationProject.Domain.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\bin\Debug\net6.0\Lcw_GraduationProject.Domain.pdb
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.csproj.AssemblyReference.cache
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.AssemblyInfoInputs.cache
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.AssemblyInfo.cs
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\refint\Lcw_GraduationProject.Domain.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\Lcw_GraduationProject.Domain.pdb
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\Lcw_Backend\Core\Lcw_GraduationProject.Domain\obj\Debug\net6.0\ref\Lcw_GraduationProject.Domain.dll
