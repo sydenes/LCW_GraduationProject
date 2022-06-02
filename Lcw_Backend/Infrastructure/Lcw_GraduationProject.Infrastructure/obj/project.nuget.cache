@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dIFW49lxPYteu8MxkCQOgV1ZIgMvJIFmd3E0hpbgU8Cv8wVAwMJhDDaMU7UJQ33xo1P7zK3Nc9eATDKFKzfhuw==",
+  "dgSpecHash": "F7k04KTQNAL4n3f30L9ISPKWdAqtfe5wI7EsLQuiAAFjfLdlfgak+nvaFrY9oM22JX+7Fdi5j3Pas4TkjcyoUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Infrastructure\\Lcw_GraduationProject.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Infrastructure\\Lcw_GraduationProject.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\enes.sagban\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "C:\\Users\\enes.sagban\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.5\\microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",

@@ -44,7 +44,9 @@ namespace Lcw_GraduationProject.API.Controllers
             {
                 Name = model.Name,
                 Price=model.Price,
-                Stock=model.Stock
+                Stock=model.Stock,
+                CategoryId=Guid.Parse(model.CategoryId),
+                UserId=Guid.Parse(model.UserId)
             });
             await productWriteRepository.SaveAsync();
             return StatusCode((int)HttpStatusCode.Created);

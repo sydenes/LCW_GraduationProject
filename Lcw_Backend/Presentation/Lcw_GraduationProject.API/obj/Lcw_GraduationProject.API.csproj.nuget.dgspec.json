@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj": {}
+    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj": {
+    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
+        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
         "projectName": "Lcw_GraduationProject.Application",
-        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
+        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj",
         "packagesPath": "C:\\Users\\enes.sagban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\obj\\",
+        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj": {
-                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj"
+              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj": {
+    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj",
         "projectName": "Lcw_GraduationProject.Domain",
-        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj",
+        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj",
         "packagesPath": "C:\\Users\\enes.sagban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\obj\\",
+        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj": {
+    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj",
         "projectName": "Lcw_GraduationProject.Persistence",
-        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj",
+        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj",
         "packagesPath": "C:\\Users\\enes.sagban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,8 +158,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj": {
-                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj"
+              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj": {
+                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj"
               }
             }
           }
@@ -174,6 +174,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -220,14 +224,14 @@
         }
       }
     },
-    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj": {
+    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj",
+        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj",
         "projectName": "Lcw_GraduationProject.API",
-        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj",
+        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\Lcw_GraduationProject.API.csproj",
         "packagesPath": "C:\\Users\\enes.sagban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\obj\\",
+        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Presentation\\Lcw_GraduationProject.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -248,11 +252,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj": {
-                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj"
+              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj": {
+                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Application\\Lcw_GraduationProject.Application.csproj"
               },
-              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj": {
-                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj"
+              "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj": {
+                "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Infrastructure\\Lcw_GraduationProject.Persistence\\Lcw_GraduationProject.Persistence.csproj"
               }
             }
           }

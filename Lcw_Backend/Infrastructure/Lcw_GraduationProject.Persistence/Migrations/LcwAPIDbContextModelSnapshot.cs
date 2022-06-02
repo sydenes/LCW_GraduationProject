@@ -22,7 +22,7 @@ namespace Lcw_GraduationProject.Persistence.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Customer", b =>
+            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Category", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,6 +30,10 @@ namespace Lcw_GraduationProject.Persistence.Migrations
 
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -40,7 +44,7 @@ namespace Lcw_GraduationProject.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Order", b =>
@@ -56,19 +60,25 @@ namespace Lcw_GraduationProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("CustomerId")
-                        .HasColumnType("uuid");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uuid");
+
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("ProductId")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Orders");
                 });
@@ -77,6 +87,9 @@ namespace Lcw_GraduationProject.Persistence.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CategoryId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedTime")
@@ -95,55 +108,105 @@ namespace Lcw_GraduationProject.Persistence.Migrations
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("OrderProduct", b =>
+            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.User", b =>
                 {
-                    b.Property<Guid>("OrdersId")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("ProductsId")
-                        .HasColumnType("uuid");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("timestamp with time zone");
 
-                    b.HasKey("OrdersId", "ProductsId");
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.HasIndex("ProductsId");
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.ToTable("OrderProduct");
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Order", b =>
                 {
-                    b.HasOne("Lcw_GraduationProject.Domain.Entities.Customer", "Customer")
+                    b.HasOne("Lcw_GraduationProject.Domain.Entities.Product", "Product")
+                        .WithOne("Order")
+                        .HasForeignKey("Lcw_GraduationProject.Domain.Entities.Order", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Lcw_GraduationProject.Domain.Entities.User", "User")
                         .WithMany("Orders")
-                        .HasForeignKey("CustomerId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("OrderProduct", b =>
+            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Product", b =>
                 {
-                    b.HasOne("Lcw_GraduationProject.Domain.Entities.Order", null)
-                        .WithMany()
-                        .HasForeignKey("OrdersId")
+                    b.HasOne("Lcw_GraduationProject.Domain.Entities.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Lcw_GraduationProject.Domain.Entities.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsId")
+                    b.HasOne("Lcw_GraduationProject.Domain.Entities.User", "User")
+                        .WithMany("Products")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Product", b =>
+                {
+                    b.Navigation("Order")
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.Customer", b =>
+            modelBuilder.Entity("Lcw_GraduationProject.Domain.Entities.User", b =>
                 {
                     b.Navigation("Orders");
+
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

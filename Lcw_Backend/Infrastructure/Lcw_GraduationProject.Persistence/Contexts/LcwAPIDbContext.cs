@@ -6,13 +6,14 @@ namespace Lcw_GraduationProject.Persistence.Contexts
 {
     public class LcwAPIDbContext : DbContext
     {
-        public LcwAPIDbContext(DbContextOptions options) : base(options) //IoC Container'de doldurulacak
+        public LcwAPIDbContext(Microsoft.EntityFrameworkCore.DbContextOptions options) : base(options) //IoC Container'de doldurulacak
         {
         }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
@@ -30,6 +31,13 @@ namespace Lcw_GraduationProject.Persistence.Contexts
             }
 
             return await base.SaveChangesAsync(cancellationToken);
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Product>()
+                .HasOne(a => a.Order)
+                .WithOne(b => b.Product)
+                .HasForeignKey<Order>(b => b.ProductId);
         }
     }
 }

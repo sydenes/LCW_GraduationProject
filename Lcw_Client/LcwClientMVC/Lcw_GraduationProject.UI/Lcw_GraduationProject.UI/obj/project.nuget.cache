@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RFPXIoQmK/mCPQqQr8ZF/r/UATB73KsiFfENkZYnvYU4REXAcUQQyAOkPoZaWI6XT+Rlw31BWiOG+6xJgUs5TQ==",
+  "dgSpecHash": "MuZcC2NylbAS9dQbJawuZ4sr5mgFsK8I1gGEqbCeEZWgLseANEW/F9GSWSk4xrmG87KcXXi+e4FvEArhskBRfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
+  "projectFilePath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\enes.sagban\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\enes.sagban\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
