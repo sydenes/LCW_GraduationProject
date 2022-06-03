@@ -34,13 +34,28 @@ namespace Lcw_GraduationProject.API.Controllers
         }
 
         [HttpPost]
+        [Route("Login")]
+        public async Task<IActionResult> Login(VM_Login_User user)
+        {
+            var datas = userReadRepository.GetAll(false).ToList();
+            foreach (var item in datas)
+            {
+                if (item.Mail==user.Mail && item.Password==user.Password)
+                {
+                    return Ok(item);
+                }
+            }
+            return BadRequest("Kullanıcı Bulunamadı");
+        }
+
+        [HttpPost]
         public async Task<IActionResult> Post(VM_Create_User model)
         {
             userWriteRepository.AddAsync(new()
             {
                 FirstName = model.FirstName,
                 LastName = model.LastName,
-                UserName = model.UserName,
+                Mail = model.Mail,
                 Password = model.Password
             });
 
@@ -58,7 +73,7 @@ namespace Lcw_GraduationProject.API.Controllers
                 {
                     FirstName = model.FirstName,
                     LastName = model.LastName,
-                    UserName = model.UserName,
+                    Mail = model.Mail,
                     Password = model.Password
                 });
             }
@@ -72,7 +87,7 @@ namespace Lcw_GraduationProject.API.Controllers
             User user = await userReadRepository.GetByIdAsync(model.Id);
             user.FirstName = model.FirstName;
             user.LastName = model.LastName;
-            user.UserName = model.UserName;
+            user.Mail = model.Mail;
             user.Password = model.Password;
             await userWriteRepository.SaveAsync();
             return Ok();

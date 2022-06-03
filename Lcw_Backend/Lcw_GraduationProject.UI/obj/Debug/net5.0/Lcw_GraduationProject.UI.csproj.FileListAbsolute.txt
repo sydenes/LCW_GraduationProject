@@ -1,0 +1,7 @@
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Lcw_GraduationProject.UI\obj\Debug\net5.0\Lcw_GraduationProject.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Lcw_GraduationProject.UI\obj\Debug\net5.0\Lcw_GraduationProject.UI.AssemblyInfoInputs.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Lcw_GraduationProject.UI\obj\Debug\net5.0\Lcw_GraduationProject.UI.AssemblyInfo.cs
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Lcw_GraduationProject.UI\obj\Debug\net5.0\Lcw_GraduationProject.UI.csproj.CoreCompileInputs.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Lcw_GraduationProject.UI\obj\Debug\net5.0\Lcw_GraduationProject.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Lcw_GraduationProject.UI\obj\Debug\net5.0\Lcw_GraduationProject.UI.RazorAssemblyInfo.cache
+C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Lcw_GraduationProject.UI\obj\Debug\net5.0\Lcw_GraduationProject.UI.RazorAssemblyInfo.cs

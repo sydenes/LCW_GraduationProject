@@ -158,15 +158,18 @@
                                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                                 </div>
                                 <div class="navbar-nav ml-auto py-0">
-                                    <a href="" class="nav-item nav-link">Login</a>
-                                    <a href="" class="nav-item nav-link">Register</a>
+                                    <a class="nav-item nav-link" asp-area="" asp-controller="User" asp-action="Index">Login/Register</a>
                                 </div>
                             </div>
                         </nav>
-                        @if (ViewData["Title"].ToString() == "Home")
+                        @if (ViewData["Title"] != null)
                         {
-                            <partial name="_SlideBar" />
+                            @if (ViewData["Title"].ToString() == "Home")
+                            {
+                                <partial name="_SlideBar" />
+                            }
                         }
+
                     </div>
                 </div>
             </div>

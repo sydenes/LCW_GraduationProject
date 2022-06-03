@@ -6,7 +6,7 @@ namespace Lcw_GraduationProject.Persistence.Contexts
 {
     public class LcwAPIDbContext : DbContext
     {
-        public LcwAPIDbContext(Microsoft.EntityFrameworkCore.DbContextOptions options) : base(options) //IoC Container'de doldurulacak
+        public LcwAPIDbContext(DbContextOptions options) : base(options) //IoC Container'de doldurulacak
         {
         }
 

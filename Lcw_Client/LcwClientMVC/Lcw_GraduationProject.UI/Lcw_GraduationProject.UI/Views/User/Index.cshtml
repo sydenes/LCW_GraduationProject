@@ -1,0 +1,61 @@
+﻿@model VM_Create_User
+@{
+    ViewData["Title"] = "User";
+    var a = ViewBag.Login;
+    Layout = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/css/user.css" rel="stylesheet">
+</head>
+<body>
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>or</span>Log in</h2>
+            <div class="form-holder">
+                <form asp-controller="User" asp-action="Login" method="post">
+                    <input asp-for="Mail" type="email" class="input" placeholder="Mail" required />
+                    <span asp-validation-for="Mail" class="form-text text-muted"></span>
+
+                    <input asp-for="Password" type="password" class="input" placeholder="Password" required />
+                    <span asp-validation-for="Password" class="form-text text-muted"></span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+            </div>
+        </div>
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span>or</span>Sign up</h2>
+
+                <div class="form-holder">
+                    <form asp-controller="User" asp-action="Index" method="post">
+                        <input asp-for="FirstName" type="text" class="input" placeholder="FirstName" />
+                        <span asp-validation-for="FirstName" class="form-text text-muted"></span>
+
+                        <input asp-for="LastName" type="text" class="input" placeholder="LastName" />
+                        <span asp-validation-for="LastName" class="form-text text-muted"></span>
+
+                        <input asp-for="Mail" type="email" class="input" placeholder="Mail" />
+                        <span asp-validation-for="Mail" class="form-text text-muted"></span>
+
+                        <input asp-for="Password" type="password" class="input" placeholder="Password" />
+                        <span asp-validation-for="Password" class="form-text text-muted"></span>
+                        <button type="submit" class="submit-btn">Sign up</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    @if (ViewBag.Login != true)
+    {
+        <script>alert('Mail or password is incorrect.');</script>
+        ;
+    }
+
+    <script src="~/js/user.js"></script>
+</body>
+</html>

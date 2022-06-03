@@ -10,6 +10,11 @@
       "ProjectGuid": "72bf9a21-17ed-43b9-a940-bb34016224ee",
       "DisplayName": "Lcw_GraduationProject.API",
       "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 2
