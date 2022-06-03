@@ -11,10 +11,14 @@ namespace Lcw_GraduationProject.UI.Controllers
         string baseUrl = "https://localhost:7061/";
         public ActionResult Index()
         {
+
             IEnumerable<VM_Get_Product> products = new List<VM_Get_Product>();
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseUrl);
+
+                client.DefaultRequestHeaders.Add("Authorization", $"Bearer {Request.Cookies["jwt"]}");
+
                 var responseTask = client.GetAsync("api/product");
                 responseTask.Wait();
 

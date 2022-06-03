@@ -8893,19 +8893,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Enes\\.nuget\\packages\\": {}
+    "C:\\Users\\enes.sagban\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
+      "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
       "projectName": "Lcw_GraduationProject.UI",
-      "projectPath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
-      "packagesPath": "C:\\Users\\Enes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\obj\\",
+      "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
+      "packagesPath": "C:\\Users\\enes.sagban\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\enes.sagban\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8962,7 +8967,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

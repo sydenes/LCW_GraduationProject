@@ -248,3 +248,11 @@ C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Presentation\Lc
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\obj\Debug\net6.0\ref\Lcw_GraduationProject.API.dll
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\obj\Debug\net6.0\Lcw_GraduationProject.API.pdb
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\obj\Debug\net6.0\Lcw_GraduationProject.API.genruntimeconfig.cache
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Backend\Presentation\Lcw_GraduationProject.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

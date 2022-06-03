@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Lcw_GraduationProject.Application.Repositories.Users
 {
-    public interface IUserReadRepository:IReadRepository<User>
+    public interface IUserReadRepository : IReadRepository<User>
     {
+        bool GetByMailAsync(string mail, bool tracking = true);
     }
 }

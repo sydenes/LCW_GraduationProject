@@ -1,6 +1,7 @@
 ﻿using Lcw_GraduationProject.Application.Repositories.Products;
 using Lcw_GraduationProject.Application.ViewModels.Products;
 using Lcw_GraduationProject.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -25,6 +26,7 @@ namespace Lcw_GraduationProject.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Get()
         {
             var datas = productReadRepository.GetAll(false).ToList();

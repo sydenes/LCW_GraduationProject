@@ -37,15 +37,12 @@ namespace Lcw_GraduationProject.API.Controllers
         [Route("Login")]
         public async Task<IActionResult> Login(VM_Login_User user)
         {
-            var datas = userReadRepository.GetAll(false).ToList();
-            foreach (var item in datas)
-            {
-                if (item.Mail==user.Mail && item.Password==user.Password)
-                {
-                    return Ok(item);
-                }
-            }
-            return BadRequest("Kullanıcı Bulunamadı");
+            bool check = userReadRepository.GetByMailAsync(user.Mail, false);
+            AccessToken token;
+            if (check)
+                return Ok(AccessToken.CreateAccessToken());
+                
+            return BadRequest("User Not Found!");
         }
 
         [HttpPost]

@@ -1,6 +1,7 @@
 ﻿using Lcw_GraduationProject.UI.Models;
 using Lcw_GraduationProject.UI.Models.Product;
 using Lcw_GraduationProject.UI.Models.User;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Net.Http;
@@ -52,6 +53,13 @@ namespace Lcw_GraduationProject.UI.Controllers
                 var result = responseTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
+                    var readTask = result.Content.ReadAsAsync<AccessToken>();
+                    readTask.Wait();
+
+                    //CookieOptions cookieOptions = new CookieOptions();
+                    //cookieOptions.Expires = DateTime.Now.AddMinutes(45);
+
+                    Response.Cookies.Append("jwt",readTask.Result.Token);
                     Constants.loginControl = true;
                     return RedirectToAction(nameof(Index), "Home");
                 }
