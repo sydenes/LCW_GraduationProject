@@ -1,4 +1,5 @@
 ﻿using Lcw_GraduationProject.Application.Repositories.Users;
+using Lcw_GraduationProject.Application.ViewModels.Users;
 using Lcw_GraduationProject.Domain.Entities;
 using Lcw_GraduationProject.Persistence.Contexts;
 using System;
@@ -17,10 +18,10 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Users
             this._context = context;
         }
 
-        public bool GetByMailAsync(string mail, bool tracking = true)
+        public bool GetByMailAsync(VM_Login_User user, bool tracking = true)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Mail == mail);
-            if(user !=null)
+            var userCheck = _context.Users.FirstOrDefault(u => u.Mail == user.Mail && u.Password==user.Password);
+            if(userCheck !=null)
                 return true;
             return false;
         }

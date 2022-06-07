@@ -4,4 +4,11 @@
     {
        public static bool loginControl = true;
     }
+    public enum Constants2
+    {
+        loginFailed,
+        loginSuccess,
+        loginNull,
+        signUpFailed
+    }
 }

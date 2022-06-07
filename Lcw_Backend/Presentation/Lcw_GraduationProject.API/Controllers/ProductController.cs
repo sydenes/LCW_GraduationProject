@@ -30,6 +30,7 @@ namespace Lcw_GraduationProject.API.Controllers
         public async Task<IActionResult> Get()
         {
             var datas = productReadRepository.GetAll(false).ToList();
+            var a = 111;
             return Ok(datas);
         }
 
@@ -46,7 +47,6 @@ namespace Lcw_GraduationProject.API.Controllers
             {
                 Name = model.Name,
                 Price=model.Price,
-                Stock=model.Stock,
                 CategoryId=Guid.Parse(model.CategoryId),
                 UserId=Guid.Parse(model.UserId)
             });
@@ -60,7 +60,6 @@ namespace Lcw_GraduationProject.API.Controllers
             Product product = await productReadRepository.GetByIdAsync(model.Id);
             product.Name = model.Name;
             product.Price = model.Price;
-            product.Stock = model.Stock;
             await productWriteRepository.SaveAsync(); //tracking mekanizması çalışacağından bunu update olarak işleyecek. Mevcut update metotu tracking olmadığı yani verinin context aracılığı ile db den gelmediği durumlarda kullanılır.
             return Ok();
         }

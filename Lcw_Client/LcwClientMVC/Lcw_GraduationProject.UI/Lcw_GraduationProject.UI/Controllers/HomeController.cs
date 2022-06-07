@@ -1,4 +1,6 @@
-﻿using Lcw_GraduationProject.UI.Models.Product;
+﻿using Lcw_GraduationProject.UI.Models;
+using Lcw_GraduationProject.UI.Models.Product;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,6 +13,8 @@ namespace Lcw_GraduationProject.UI.Controllers
         string baseUrl = "https://localhost:7061/";
         public ActionResult Index()
         {
+            if (HttpContext.Session.GetString("isLogin")==null)
+                HttpContext.Session.SetString("isLogin", Constants2.loginNull.ToString());
 
             IEnumerable<VM_Get_Product> products = new List<VM_Get_Product>();
             using (var client = new HttpClient())
@@ -18,6 +22,7 @@ namespace Lcw_GraduationProject.UI.Controllers
                 client.BaseAddress = new Uri(baseUrl);
 
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {Request.Cookies["jwt"]}");
+                var a=client.DefaultRequestHeaders.Authorization.ToString();
 
                 var responseTask = client.GetAsync("api/product");
                 responseTask.Wait();

@@ -12,13 +12,13 @@ namespace Lcw_GraduationProject.UI.Controllers
     {
         string baseUrl = "https://localhost:7061/";
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index() //LoginHome
         {
-            ViewBag.Login = Constants.loginControl;
+            //ViewBag.Login = Constants.loginControl;
             return View();
         }
         [HttpPost]
-        public IActionResult Index(VM_Create_User user)
+        public IActionResult Index(VM_Create_User user) //SignUp User
         {
             if (ModelState.IsValid)
             {
@@ -31,6 +31,7 @@ namespace Lcw_GraduationProject.UI.Controllers
                     var result = responseTask.Result;
                     if (result.IsSuccessStatusCode)
                     {
+                        HttpContext.Session.SetString("isLogin", Constants2.loginSuccess.ToString());
                         return RedirectToAction(nameof(Index),"Home");
                     }
                     else
@@ -39,6 +40,7 @@ namespace Lcw_GraduationProject.UI.Controllers
                     }
                 }
             }
+            HttpContext.Session.SetString("isLogin", Constants2.signUpFailed.ToString());
             return View(user);
         }
         [HttpPost]
@@ -56,16 +58,14 @@ namespace Lcw_GraduationProject.UI.Controllers
                     var readTask = result.Content.ReadAsAsync<AccessToken>();
                     readTask.Wait();
 
-                    //CookieOptions cookieOptions = new CookieOptions();
-                    //cookieOptions.Expires = DateTime.Now.AddMinutes(45);
-
+                    var a=readTask.Result.Token;
                     Response.Cookies.Append("jwt",readTask.Result.Token);
-                    Constants.loginControl = true;
+                    HttpContext.Session.SetString("isLogin", Constants2.loginSuccess.ToString());
                     return RedirectToAction(nameof(Index), "Home");
                 }
                 else
                 {
-                    Constants.loginControl = false;
+                    HttpContext.Session.SetString("isLogin", Constants2.loginFailed.ToString());
                     return RedirectToAction(nameof(Index));
                 }
             }

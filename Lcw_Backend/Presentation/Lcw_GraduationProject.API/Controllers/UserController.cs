@@ -37,7 +37,7 @@ namespace Lcw_GraduationProject.API.Controllers
         [Route("Login")]
         public async Task<IActionResult> Login(VM_Login_User user)
         {
-            bool check = userReadRepository.GetByMailAsync(user.Mail, false);
+            bool check = userReadRepository.GetByMailAsync(user,false);
             AccessToken token;
             if (check)
                 return Ok(AccessToken.CreateAccessToken());

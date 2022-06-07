@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var isControl = Context.Session.GetString("isLogin");
+    var a=123;
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -146,6 +151,7 @@
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav mr-auto py-0">
                                     <a class="nav-item nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                    |
                                     <a class="nav-item nav-link" asp-area="" asp-controller="Product" asp-action="Index">All Products</a>
                                     <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                                     <div class="nav-item dropdown">
@@ -158,13 +164,22 @@
                                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                                 </div>
                                 <div class="navbar-nav ml-auto py-0">
-                                    <a class="nav-item nav-link" asp-area="" asp-controller="User" asp-action="Index">Login/Register</a>
+                                    @if(isControl!="loginSuccess") //Kullanıcı girişi durumuna göre navbar yönetimi
+                                    {
+                                        <a class="nav-item nav-link" asp-area="" asp-controller="User" asp-action="Index">Login/Register</a>
+                                    }
+                                    else
+                                    {
+                                        <a class="nav-item nav-link" asp-area="" asp-controller="User" asp-action="Index">My Account</a>
+                                        <a class="nav-item nav-link" asp-area="" asp-controller="User" asp-action="Index">Add Product</a>
+                                    }
+
                                 </div>
                             </div>
                         </nav>
                         @if (ViewData["Title"] != null)
                         {
-                            @if (ViewData["Title"].ToString() == "Home")
+                            @if (ViewData["Title"].ToString() == "Home") //Sadece ana sayfanın layout'unda slideBar
                             {
                                 <partial name="_SlideBar" />
                             }

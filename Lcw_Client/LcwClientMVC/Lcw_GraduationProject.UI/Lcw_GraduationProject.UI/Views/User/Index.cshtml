@@ -1,7 +1,8 @@
-﻿@model VM_Create_User
+﻿
+@model VM_Create_User
 @{
     ViewData["Title"] = "User";
-    var a = ViewBag.Login;
+    var isControl = Context.Session.GetString("isLogin");
     Layout = "";
 }
 <!DOCTYPE html>
@@ -50,11 +51,16 @@
         </div>
     </div>
 
-    @if (ViewBag.Login != true)
+
+    @if (isControl == "loginFailed")
     {
-        <script>alert('Mail or password is incorrect.');</script>
-        ;
+        <script>alert('Mail or password is incorrect.')</script>
     }
+    @if (isControl == "signUpFailed")
+    {
+        <script>alert('Sign Up Failed. Please control fields !')</script>
+    }
+
 
     <script src="~/js/user.js"></script>
 </body>

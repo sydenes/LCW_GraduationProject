@@ -23,7 +23,7 @@ namespace Lcw_GraduationProject.Application.ViewModels.Users
                     issuer: "www.vestiyer.com",
                     audience: "vestiyer/user",
                     claims: new List<Claim>(),
-                    expires: DateTime.Now.AddMinutes(45),
+                    expires: DateTime.Now.AddMinutes(1),
                     signingCredentials: signinCredentials
                 );
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
