@@ -10,6 +10,16 @@ namespace Lcw_GraduationProject.UI.Controllers
 {
     public class HomeController : Controller
     {
+        public MainLayoutViewModel MainLayoutViewModel { get; set; }
+
+        public HomeController()
+        {
+            this.MainLayoutViewModel = new MainLayoutViewModel();//has property PageTitle
+            this.MainLayoutViewModel.PageTitle = "my title";
+
+            this.ViewData["MainLayoutViewModel"] = this.MainLayoutViewModel.PageTitle;
+        }
+
         string baseUrl = "https://localhost:7061/";
         public ActionResult Index()
         {
@@ -37,5 +47,9 @@ namespace Lcw_GraduationProject.UI.Controllers
             }
             return View(products);
         }
+    }
+    public class MainLayoutViewModel
+    {
+        public string PageTitle { get; set; }
     }
 }
