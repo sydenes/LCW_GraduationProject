@@ -1,0 +1,46 @@
+﻿@model Lcw_GraduationProject.UI.Models.Product.VM_Get_Product
+
+<div class="d-flex align-items-center mb-4 pt-2">
+                    <div class="d-flex mb-3">
+                        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#giveOffer">
+                            Give Offer
+                        </button>
+                        <div class="modal fade" id="giveOffer" tabindex="-1" role="dialog" aria-labelledby="">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Give Offer</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    </div>
+                                    <form method="post" action="/home/giveOffer">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="size-1" name="size">
+                                            <label class="custom-control-label" for="size-1">50%</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="size-2" name="size">
+                                            <label class="custom-control-label" for="size-2">60%</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="size-3" name="size">
+                                            <label class="custom-control-label" for="size-3">70%</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="size-4" name="size">
+                                            <label class="custom-control-label" for="size-4">80%</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="size-5" name="size">
+                                            <label class="custom-control-label" for="size-5">90%</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="size-6" name="size">
+                                            <label class="custom-control-label" for="size-6"><input type="number" min="1" max="@Model.Price" placeholder="Your offer price..." /></label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary px-3"><i class="fa fa-handshake mr-1"></i> Give Offer </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
