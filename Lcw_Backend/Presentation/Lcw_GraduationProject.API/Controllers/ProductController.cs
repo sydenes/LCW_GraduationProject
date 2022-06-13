@@ -26,18 +26,18 @@ namespace Lcw_GraduationProject.API.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Get()
         {
             var datas = productReadRepository.GetAll(false).ToList();
-            var a = 111;
             return Ok(datas);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {
-            return Ok(await productReadRepository.GetByIdAsync(id, false));
+            var a=await productReadRepository.GetByIdAsync(id, false);
+            return Ok(a);
         }
 
         [HttpPost]

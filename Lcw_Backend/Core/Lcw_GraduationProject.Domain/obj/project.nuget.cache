@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y1DNEph4R9jr/ZWWgMnQcb3q7kVux5W7C7cF/XfSVUFcRPhz9HHsoiRz8w1noTvvfpM34u2sgYfOcjD2bcSNsw==",
+  "dgSpecHash": "EPUNgOM8J7GDKd/FQxtqmSJlfRYhdngK6ZlPC1KVkfO8BpEDq6ZFwwfbul8iSiylz4MNppWlE8zVOh8K0cZ6lw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj",
+  "projectFilePath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Backend\\Core\\Lcw_GraduationProject.Domain\\Lcw_GraduationProject.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

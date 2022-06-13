@@ -715,3 +715,5 @@ C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI\obj\Debug\net6.0\scopedcss\projectbundle\Lcw_GraduationProject.UI.bundle.scp.css
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI\obj\Debug\net6.0\Lcw_GraduationProject.UI.csproj.CopyComplete
 C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI\obj\Debug\net6.0\Lcw_GraduationProject.UI.genruntimeconfig.cache
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll

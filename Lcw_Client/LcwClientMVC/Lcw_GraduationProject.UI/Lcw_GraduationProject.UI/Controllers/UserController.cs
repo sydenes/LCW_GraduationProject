@@ -31,7 +31,12 @@ namespace Lcw_GraduationProject.UI.Controllers
                     var result = responseTask.Result;
                     if (result.IsSuccessStatusCode)
                     {
+                        var readTask = result.Content.ReadAsAsync<AccessToken>();
+                        readTask.Wait();
+                        Response.Cookies.Append("jwt", readTask.Result.Token);
                         HttpContext.Session.SetString("isLogin", Constants2.loginSuccess.ToString());
+                        HttpContext.Session.SetString("userId", readTask.Result.UserId);
+
                         return RedirectToAction(nameof(Index),"Home");
                     }
                     else
@@ -57,10 +62,9 @@ namespace Lcw_GraduationProject.UI.Controllers
                 {
                     var readTask = result.Content.ReadAsAsync<AccessToken>();
                     readTask.Wait();
-
-                    var a=readTask.Result.Token;
                     Response.Cookies.Append("jwt",readTask.Result.Token);
                     HttpContext.Session.SetString("isLogin", Constants2.loginSuccess.ToString());
+                    HttpContext.Session.SetString("userId", readTask.Result.UserId);
                     return RedirectToAction(nameof(Index), "Home");
                 }
                 else

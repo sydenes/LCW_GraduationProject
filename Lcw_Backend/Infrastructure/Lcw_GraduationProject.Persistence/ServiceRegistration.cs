@@ -1,9 +1,11 @@
 ﻿using Lcw_GraduationProject.Application.Repositories.Categories;
+using Lcw_GraduationProject.Application.Repositories.Offers;
 using Lcw_GraduationProject.Application.Repositories.Orders;
 using Lcw_GraduationProject.Application.Repositories.Products;
 using Lcw_GraduationProject.Application.Repositories.Users;
 using Lcw_GraduationProject.Persistence.Contexts;
 using Lcw_GraduationProject.Persistence.Repositories.Categories;
+using Lcw_GraduationProject.Persistence.Repositories.Offers;
 using Lcw_GraduationProject.Persistence.Repositories.Orders;
 using Lcw_GraduationProject.Persistence.Repositories.Products;
 using Lcw_GraduationProject.Persistence.Repositories.Users;
@@ -26,6 +28,8 @@ namespace Lcw_GraduationProject.Persistence
             services.AddScoped<IProductWriteRepository,ProductWriteRepository>();   
             services.AddScoped<ICategoryReadRepository, CategoryReadRepository>();
             services.AddScoped<ICategoryWriteRepository, CategoryWriteRepository>();
+            services.AddScoped<IOfferReadRepository, OfferReadRepository>();
+            services.AddScoped<IOfferWriteRepository, OfferWriteRepository>();
         }
     }
 }

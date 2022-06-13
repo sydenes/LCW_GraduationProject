@@ -18,12 +18,12 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Users
             this._context = context;
         }
 
-        public bool GetByMailAsync(VM_Login_User user, bool tracking = true)
+        public async Task<string> GetIdByMailAsync(VM_Login_User user, bool tracking = false)
         {
-            var userCheck = _context.Users.FirstOrDefault(u => u.Mail == user.Mail && u.Password==user.Password);
-            if(userCheck !=null)
-                return true;
-            return false;
+            var userRes = _context.Users.FirstOrDefault(u => u.Mail == user.Mail && u.Password==user.Password);
+            if(userRes !=null)
+                return userRes.Id.ToString();
+            return null;
         }
     }
 }

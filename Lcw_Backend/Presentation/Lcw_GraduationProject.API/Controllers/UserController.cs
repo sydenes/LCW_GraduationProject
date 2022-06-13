@@ -37,10 +37,9 @@ namespace Lcw_GraduationProject.API.Controllers
         [Route("Login")]
         public async Task<IActionResult> Login(VM_Login_User user)
         {
-            bool check = userReadRepository.GetByMailAsync(user,false);
-            AccessToken token;
-            if (check)
-                return Ok(AccessToken.CreateAccessToken());
+            string userRes =await userReadRepository.GetIdByMailAsync(user,false);
+            if (userRes!=null)
+                return Ok(AccessToken.CreateAccessToken(userRes));
                 
             return BadRequest("User Not Found!");
         }
@@ -57,7 +56,9 @@ namespace Lcw_GraduationProject.API.Controllers
             });
 
             await userWriteRepository.SaveAsync();
-            return StatusCode((int)HttpStatusCode.Created);
+
+            string userRes = await userReadRepository.GetIdByMailAsync(new VM_Login_User() { Mail=model.Mail,Password=model.Password}, false);
+            return Ok(AccessToken.CreateAccessToken(userRes));
         }
 
         [HttpPost]

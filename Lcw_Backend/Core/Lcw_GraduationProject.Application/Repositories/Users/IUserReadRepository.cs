@@ -10,6 +10,6 @@ namespace Lcw_GraduationProject.Application.Repositories.Users
 {
     public interface IUserReadRepository : IReadRepository<User>
     {
-        bool GetByMailAsync(VM_Login_User user, bool tracking = true);
+        Task<string> GetIdByMailAsync(VM_Login_User user, bool tracking = true);
     }
 }

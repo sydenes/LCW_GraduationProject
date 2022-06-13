@@ -12,7 +12,8 @@ namespace Lcw_GraduationProject.Application.ViewModels.Users
     public class AccessToken
     {
         public string Token { get; set; }
-        public static AccessToken CreateAccessToken() //string secret
+        public string UserId { get; set; }
+        public static AccessToken CreateAccessToken(string userId) //string secret
         {
             try
             {
@@ -23,12 +24,12 @@ namespace Lcw_GraduationProject.Application.ViewModels.Users
                     issuer: "www.vestiyer.com",
                     audience: "vestiyer/user",
                     claims: new List<Claim>(),
-                    expires: DateTime.Now.AddMinutes(1),
+                    expires: DateTime.Now.AddMinutes(10),
                     signingCredentials: signinCredentials
                 );
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
 
-                return new AccessToken { Token = tokenString };
+                return new AccessToken { Token = tokenString, UserId=userId };
             }
             catch (Exception exp)
             {
