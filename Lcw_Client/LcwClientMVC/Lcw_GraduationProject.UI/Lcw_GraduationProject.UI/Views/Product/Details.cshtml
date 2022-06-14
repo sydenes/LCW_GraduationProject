@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    VM_Get_Offer offer = ViewBag.offer;
 }
 
 <!-- Page Header Start -->
@@ -69,7 +70,24 @@
 
                 @if (Model.isOfferable)
                 {
-                    <partial name="_GiveOffer" model="@Model" />
+                    if (offer == null)
+                    {
+                        <partial name="_GiveOffer" model="@Model" />
+                    }
+                    else
+                    {
+                        <div class="d-flex align-items-center mb-4 pt-2">
+                            <div class="d-flex mb-3">
+                                <h3 class="font-weight-semi-bold">Your Offer: $ @offer.Price --> </h3>
+                                <form asp-action="WithdrawOffer" asp-controller="Offer" asp-route-id="@offer.Id">
+                                    <button type="submit" class="btn btn-success btn-lg" data-toggle="modal" >
+                                        Withdraw the Offer
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    }
+
                 }
                 <div class="d-flex align-items-center mb-4 pt-2">
                     <a asp-action="Index" asp-controller="Order" asp-route-id="@Model.Id" asp-route-offer="0%" class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Buy Now </a>

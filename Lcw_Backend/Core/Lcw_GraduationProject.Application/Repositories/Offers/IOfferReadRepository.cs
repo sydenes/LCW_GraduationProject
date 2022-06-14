@@ -9,5 +9,6 @@ namespace Lcw_GraduationProject.Application.Repositories.Offers
 {
     public interface IOfferReadRepository : IReadRepository<Offer>
     {
+        Offer ReadOffer(string productId,string userId);
     }
 }

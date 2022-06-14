@@ -1,4 +1,5 @@
-﻿using Lcw_GraduationProject.UI.Models.Product;
+﻿using Lcw_GraduationProject.UI.Models.Offer;
+using Lcw_GraduationProject.UI.Models.Product;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -35,10 +36,18 @@ namespace Lcw_GraduationProject.UI.Controllers
         // GET: ProductController/Details/5
         public ActionResult Details(string id)
         {
+            string userId = HttpContext.Session.GetString("userId");
+            if (userId == null)
+            {
+                return RedirectToAction(nameof(Index), "User");
+            }
+
             VM_Get_Product product = new VM_Get_Product();
+            VM_Get_Offer offer = new VM_Get_Offer();
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseUrl);
+
                 var responseTask = client.GetAsync($"api/product/{id}");
                 responseTask.Wait();
 
@@ -48,6 +57,20 @@ namespace Lcw_GraduationProject.UI.Controllers
                     var readTask = result.Content.ReadAsAsync<VM_Get_Product>();
                     readTask.Wait();
                     product = readTask.Result;
+                }
+
+                var responseTaskOffer = client.GetAsync($"api/offer/{id}/{userId}");
+                responseTaskOffer.Wait();
+                var resultOffer = responseTaskOffer.Result;
+                if (resultOffer.IsSuccessStatusCode)
+                {
+                    var readTask = resultOffer.Content.ReadAsAsync<VM_Get_Offer>();
+                    readTask.Wait();
+                    offer = readTask.Result;
+                    if (offer!=null)
+                    {
+                        ViewBag.offer = offer;
+                    }
                 }
             }
             return View(product);

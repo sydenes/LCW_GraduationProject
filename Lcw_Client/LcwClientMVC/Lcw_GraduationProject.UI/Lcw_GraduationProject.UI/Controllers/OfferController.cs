@@ -37,5 +37,26 @@ namespace Lcw_GraduationProject.UI.Controllers
             }
             return View();
         }
+        [HttpPost]
+        public IActionResult WithdrawOffer(string id)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                var responseTask = client.DeleteAsync($"api/offer/{id}");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction(nameof(Index), "Home");
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            return View();
+        }
     }
 }

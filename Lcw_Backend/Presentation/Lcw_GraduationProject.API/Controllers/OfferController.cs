@@ -35,6 +35,11 @@ namespace Lcw_GraduationProject.API.Controllers
         {
             return Ok(await offerReadRepository.GetByIdAsync(id, false));
         }
+        [HttpGet("{id}/{userId}")]
+        public IActionResult Get(string id,string userId)
+        {
+            return Ok(offerReadRepository.ReadOffer(id, userId));
+        }
 
 
         [HttpPost]
@@ -84,8 +89,9 @@ namespace Lcw_GraduationProject.API.Controllers
             //Silmek yerine IsActive=false
             var offer=await offerReadRepository.GetByIdAsync(id, false);
             offer.IsActive = false;
-            await offerWriteRepository.SaveAsync();
-            return Ok();
+            var deletedOffer=await offerWriteRepository.SaveAsync();
+            if (deletedOffer > 0) return Ok();
+            return BadRequest();
         }
     }
 }

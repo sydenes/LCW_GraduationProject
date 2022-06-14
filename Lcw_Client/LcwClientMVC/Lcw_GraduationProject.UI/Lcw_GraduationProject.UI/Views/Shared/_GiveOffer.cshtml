@@ -8,32 +8,6 @@
         <div class="modal fade" id="giveOffer" tabindex="-1" role="dialog" aria-labelledby="">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    @*@using (Html.BeginForm("Index", "Order", FormMethod.Post))
-                        {
-                        <table>
-                        @for(int a=5;a<10;a++)
-                        {
-                        <tr>
-                        <td>
-                        @Html.RadioButton("Fruit", a, false, new {@id = a })
-                        </td>
-                        <td>
-                        @Html.Label(a.ToString(), a.ToString(),new { @for = a})
-                        </td>
-                        </tr>
-                        }
-                        </table>
-                        <br />
-                        <input type="submit" value="Submit" />
-                        }
-                        @if (ViewBag.Message != null)
-                        {
-                        <script type="text/javascript">
-                        window.onload = function () {
-                        alert("@ViewBag.Message");
-                        };
-                        </script>
-                        }*@
 
                     <form method="post" asp-action="Index" asp-controller="Offer" asp-route-productId="@Model.Id">
                         <div class="custom-control custom-radio custom-control-inline">
