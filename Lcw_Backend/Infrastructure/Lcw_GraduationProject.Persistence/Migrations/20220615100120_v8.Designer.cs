@@ -3,6 +3,7 @@ using System;
 using Lcw_GraduationProject.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Lcw_GraduationProject.Persistence.Migrations
 {
     [DbContext(typeof(LcwAPIDbContext))]
-    partial class LcwAPIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220615100120_v8")]
+    partial class v8
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,9 +98,6 @@ namespace Lcw_GraduationProject.Persistence.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<float>("OrderPrice")
-                        .HasColumnType("real");
 
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uuid");

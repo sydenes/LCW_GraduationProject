@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lcw_GraduationProject.Application.ViewModels.Orders
+﻿namespace Lcw_GraduationProject.UI.Models.Order
 {
     public class VM_Create_Order
     {

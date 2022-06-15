@@ -36,8 +36,8 @@ namespace Lcw_GraduationProject.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {
-            var a=await productReadRepository.GetByIdAsync(id, false);
-            return Ok(a);
+            var product=await productReadRepository.GetByIdAsync(id, false);
+            return Ok(product);
         }
 
         [HttpPost]
@@ -48,7 +48,8 @@ namespace Lcw_GraduationProject.API.Controllers
                 Name = model.Name,
                 Price=model.Price,
                 CategoryId=Guid.Parse(model.CategoryId),
-                UserId=Guid.Parse(model.UserId)
+                UserId=Guid.Parse(model.UserId),
+                IsSold=false
             });
             await productWriteRepository.SaveAsync();
             return StatusCode((int)HttpStatusCode.Created);

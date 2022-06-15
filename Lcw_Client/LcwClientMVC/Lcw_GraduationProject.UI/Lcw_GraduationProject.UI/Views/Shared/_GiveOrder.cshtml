@@ -1,0 +1,29 @@
+﻿@model Lcw_GraduationProject.UI.Models.Product.VM_Get_Product
+
+<div class="d-flex align-items-center mb-4 pt-2">
+    <div class="d-flex mb-3">
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#giveOrder">
+            Give Order
+        </button>
+        <div class="modal fade" id="giveOrder" tabindex="-1" role="dialog" aria-labelledby="">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <form method="post" asp-action="Index" asp-controller="Order">
+                        <div >
+                        <label  id="address">Address:</label>
+                        <input placeholder="Please enter your address." type="" class="input"  name="Address" >
+                        </div>
+                        <div >
+                        <label id="description">Description:</label>
+                        <input placeholder="Optional..." type="text" class="input" name="Description" >
+                        </div>
+                        <input type="hidden" value=@Model.Id name="ProductId"/>
+                        <input type="hidden" value=@Model.Price name="OrderPrice"/>
+                        <button  type="submit" class="btn btn-primary px-3"><i class="fa fa-handshake mr-1"></i> Complete Order </button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
