@@ -151,7 +151,6 @@
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav mr-auto py-0">
                                     <a class="nav-item nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                                    |
                                     <a class="nav-item nav-link" asp-area="" asp-controller="Product" asp-action="Index">All Products</a>
                                     <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                                     <div class="nav-item dropdown">
@@ -170,8 +169,9 @@
                                     }
                                     else
                                     {
-                                        <a class="nav-item nav-link" asp-area="" asp-controller="User" asp-action="Index">My Account</a>
-                                        <a class="nav-item nav-link" asp-area="" asp-controller="User" asp-action="Index">Add Product</a>
+                                        <a class="nav-item nav-link"  asp-controller="User" asp-action="MyOffers">My Offers</a>
+                                        <a class="nav-item nav-link"  asp-controller="User" asp-action="OthersOffers">Other Offers</a>
+                                        <a class="nav-item nav-link"  asp-controller="Create" asp-action="Product">Add Product</a>
                                     }
 
                                 </div>

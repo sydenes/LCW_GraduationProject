@@ -65,6 +65,9 @@ namespace Lcw_GraduationProject.Persistence.Migrations
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uuid");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("timestamp with time zone");
 

@@ -1,9 +1,11 @@
 ﻿using Lcw_GraduationProject.UI.Models;
+using Lcw_GraduationProject.UI.Models.Offer;
 using Lcw_GraduationProject.UI.Models.Product;
 using Lcw_GraduationProject.UI.Models.User;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 
 namespace Lcw_GraduationProject.UI.Controllers
@@ -73,6 +75,49 @@ namespace Lcw_GraduationProject.UI.Controllers
                     return RedirectToAction(nameof(Index));
                 }
             }
+        }
+
+        [HttpGet]
+        public IActionResult MyOffers()
+        {
+            string userId = HttpContext.Session.GetString("userId");
+            List< VM_Get_OfferDetail > offers = new List< VM_Get_OfferDetail >();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                var responseTask = client.GetAsync($"api/offer/useroffers/{userId}");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<List<VM_Get_OfferDetail>>();
+                    readTask.Wait();
+                    offers = readTask.Result;
+                }
+            }
+            return View(offers);
+        }
+        [HttpGet]
+        public IActionResult OthersOffers()
+        {
+            string userId = HttpContext.Session.GetString("userId");
+            List<VM_Get_OfferDetail> offers = new List<VM_Get_OfferDetail>();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                var responseTask = client.GetAsync($"api/offer/othersoffers/{userId}");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<List<VM_Get_OfferDetail>>();
+                    readTask.Wait();
+                    offers = readTask.Result;
+                }
+            }
+            return View(offers);
         }
     }
 }

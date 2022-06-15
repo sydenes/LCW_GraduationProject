@@ -11,5 +11,6 @@ namespace Lcw_GraduationProject.Application.ViewModels.Offers
         public string ProductId { get; set; }
         public string UserId { get; set; }
         public float Price { get; set; }
+        public int Status { get; set; }
     }
 }

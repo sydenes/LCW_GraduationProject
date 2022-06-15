@@ -36,9 +36,19 @@ namespace Lcw_GraduationProject.API.Controllers
             return Ok(await offerReadRepository.GetByIdAsync(id, false));
         }
         [HttpGet("{id}/{userId}")]
-        public IActionResult Get(string id,string userId)
+        public IActionResult GetOffer(string productId,string userId)
         {
-            return Ok(offerReadRepository.ReadOffer(id, userId));
+            return Ok(offerReadRepository.ReadOffer(productId, userId));
+        }
+        [HttpGet("useroffers/{userId}")]
+        public IActionResult GetOfferList(string userId)
+        {
+            return Ok(offerReadRepository.OfferList(userId));
+        }
+        [HttpGet("othersoffers/{userId}")]
+        public IActionResult GetOthersOfferList(string userId)
+        {
+            return Ok(offerReadRepository.OthersOfferList(userId));
         }
 
 
@@ -50,7 +60,8 @@ namespace Lcw_GraduationProject.API.Controllers
                 UserId = Guid.Parse(model.UserId),
                 ProductId = Guid.Parse(model.ProductId),
                 Price=model.Price,
-                IsActive=true
+                IsActive=true,
+                Status=0
             });
 
             await offerWriteRepository.SaveAsync();

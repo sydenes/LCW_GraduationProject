@@ -13,6 +13,7 @@ namespace Lcw_GraduationProject.Domain.Entities
         public Guid UserId { get; set; }
         public float Price { get; set; }
         public bool IsActive { get; set; }
+        public int Status { get; set; }
         public Product Product { get; set; }
         public User User { get; set; }
     }
