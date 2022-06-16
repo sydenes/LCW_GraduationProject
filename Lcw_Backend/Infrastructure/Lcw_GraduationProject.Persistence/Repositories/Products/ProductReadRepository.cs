@@ -27,5 +27,10 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Products
 
             return null;
         }
+
+        public IEnumerable<Product> GetMyProducts(string userId)
+        {
+            return _context.Products.Where(x => x.UserId == Guid.Parse(userId)).ToList();
+        }
     }
 }

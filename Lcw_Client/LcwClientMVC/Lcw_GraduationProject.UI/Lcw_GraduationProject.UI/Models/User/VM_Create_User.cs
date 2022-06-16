@@ -6,13 +6,13 @@ namespace Lcw_GraduationProject.UI.Models.User
     {
         [Display(Name = "FirstName", Prompt = "Name")]
         [DataType(DataType.Text, ErrorMessage = "{0} exception")]
-        [StringLength(100, ErrorMessage = "min10-max100 character", MinimumLength = 10)]
+        [StringLength(100, ErrorMessage = "min10-max100 character", MinimumLength = 3)]
         [Required(ErrorMessage = "{0} is Required")]
         public string FirstName { get; set; }
 
         [Display(Name = "LastName", Prompt = "Surname")]
         [DataType(DataType.Text, ErrorMessage = "{0} exception")]
-        [StringLength(100, ErrorMessage = "min10-max100 character", MinimumLength = 10)]
+        [StringLength(100, ErrorMessage = "min10-max100 character", MinimumLength = 2)]
         [Required(ErrorMessage = "{0} is Required")]
         public string LastName { get; set; }
 

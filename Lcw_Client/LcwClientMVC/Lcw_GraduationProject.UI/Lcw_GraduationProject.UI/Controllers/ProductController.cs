@@ -1,4 +1,5 @@
-﻿using Lcw_GraduationProject.UI.Models.Offer;
+﻿using Lcw_GraduationProject.UI.Models;
+using Lcw_GraduationProject.UI.Models.Offer;
 using Lcw_GraduationProject.UI.Models.Product;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +11,6 @@ namespace Lcw_GraduationProject.UI.Controllers
 {
     public class ProductController : Controller
     {
-        string baseUrl = "https://localhost:7061/";
         // GET: ProductController
         //[Route("get")]
         public ActionResult Index()
@@ -18,7 +18,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             IEnumerable<VM_Get_Product> products=new List<VM_Get_Product>();
             using (var client=new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask=client.GetAsync("api/product");
                 responseTask.Wait();
 
@@ -28,6 +28,31 @@ namespace Lcw_GraduationProject.UI.Controllers
                     var readTask=result.Content.ReadAsAsync<IEnumerable<VM_Get_Product>>();
                     readTask.Wait();
                     products=readTask.Result;
+                }
+            }
+            return View(products);
+        }
+        [HttpGet]
+        public ActionResult MyProducts()
+        {
+            string userId = HttpContext.Session.GetString("userId");
+            if (userId == null)
+            {
+                return RedirectToAction(nameof(Index), "User");
+            }
+            IEnumerable<VM_Get_Product> products = new List<VM_Get_Product>();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(Constants.baseUrl);
+                var responseTask = client.GetAsync($"api/product/myproducts/{userId}");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IEnumerable<VM_Get_Product>>();
+                    readTask.Wait();
+                    products = readTask.Result;
                 }
             }
             return View(products);
@@ -46,7 +71,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             VM_Get_Offer offer = new VM_Get_Offer();
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
 
                 var responseTask = client.GetAsync($"api/product/{id}");
                 responseTask.Wait();
@@ -87,16 +112,22 @@ namespace Lcw_GraduationProject.UI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(VM_Create_Product model)
         {
+            string userId = HttpContext.Session.GetString("userId"); 
+            if (userId == null)
+            {
+                return RedirectToAction(nameof(Index), "User");
+            }
+            model.UserId = userId;
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.PostAsJsonAsync<VM_Create_Product>($"api/product/",model);
                 responseTask.Wait();
 
                 var result = responseTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(MyProducts));
                 }
                 else
                 {
@@ -111,7 +142,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             VM_Update_Product product = new VM_Update_Product();
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.GetAsync($"api/product/{id}");
                 responseTask.Wait();
 
@@ -133,14 +164,14 @@ namespace Lcw_GraduationProject.UI.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.PutAsJsonAsync<VM_Update_Product>($"api/product", model);
                 responseTask.Wait();
 
                 var result = responseTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(MyProducts));
                 }
                 else
                 {
@@ -155,7 +186,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             VM_Get_Product product = new VM_Get_Product();
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.GetAsync($"api/product/{id}");
                 responseTask.Wait();
 
@@ -177,14 +208,14 @@ namespace Lcw_GraduationProject.UI.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.DeleteAsync($"api/product/{id}");
                 responseTask.Wait();
 
                 var result = responseTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(MyProducts));
                 }
                 else
                 {

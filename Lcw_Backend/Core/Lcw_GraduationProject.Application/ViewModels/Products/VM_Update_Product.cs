@@ -11,6 +11,6 @@ namespace Lcw_GraduationProject.Application.ViewModels.Products
         public string Id { get; set; }
         public string Name { get; set; }
         public float Price { get; set; }
-        public string CategoryId { get; set; }
+        public bool isOfferable { get; set; }
     }
 }

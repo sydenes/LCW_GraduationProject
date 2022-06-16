@@ -1,4 +1,5 @@
-﻿using Lcw_GraduationProject.UI.Models.Offer;
+﻿using Lcw_GraduationProject.UI.Models;
+using Lcw_GraduationProject.UI.Models.Offer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -8,7 +9,6 @@ namespace Lcw_GraduationProject.UI.Controllers
 {
     public class OfferController : Controller
     {
-        string baseUrl = "https://localhost:7061/"; //TODO:Constants'a koy.
         public IActionResult Index()
         {
             return View();
@@ -21,7 +21,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             VM_Create_Offer offer = new VM_Create_Offer() { UserId=userId,Price=floatPrice,ProductId=productId};
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.PostAsJsonAsync<VM_Create_Offer>($"api/offer/", offer);
                 responseTask.Wait();
 
@@ -37,12 +37,13 @@ namespace Lcw_GraduationProject.UI.Controllers
             }
             return View();
         }
-        [HttpPost]
+
+        [HttpGet]
         public IActionResult WithdrawOffer(string id)
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.DeleteAsync($"api/offer/{id}");
                 responseTask.Wait();
 
@@ -56,7 +57,26 @@ namespace Lcw_GraduationProject.UI.Controllers
                     return NotFound();
                 }
             }
-            return View();
+        }
+        [HttpGet]
+        public IActionResult ApproveOffer(string id)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(Constants.baseUrl);
+                var responseTask = client.GetAsync($"api/offer/approve/{id}");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction(nameof(Index), "Home");
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
         }
     }
 }

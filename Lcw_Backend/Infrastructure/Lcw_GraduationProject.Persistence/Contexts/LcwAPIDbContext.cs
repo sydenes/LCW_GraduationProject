@@ -10,6 +10,7 @@ namespace Lcw_GraduationProject.Persistence.Contexts
         {
         }
 
+
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<User> Users { get; set; }
@@ -25,8 +26,8 @@ namespace Lcw_GraduationProject.Persistence.Contexts
             {
                 _ = data.State switch //discard operator: atama yapılmaması gerektiğinde genelde belleği optimum kullanmada işe yarayabilir.
                 {
-                    EntityState.Added => data.Entity.CreatedTime=DateTime.UtcNow,
-                    EntityState.Modified => data.Entity.UpdatedDate=DateTime.UtcNow,
+                    EntityState.Added => data.Entity.CreatedTime = DateTime.UtcNow,
+                    EntityState.Modified => data.Entity.UpdatedDate = DateTime.UtcNow,
                     _ => DateTime.UtcNow
                 };
             }
@@ -39,6 +40,25 @@ namespace Lcw_GraduationProject.Persistence.Contexts
                 .HasOne(a => a.Order)
                 .WithOne(b => b.Product)
                 .HasForeignKey<Order>(b => b.ProductId);
+
+            modelBuilder.Entity<User>()
+                .HasMany<Offer>(u => u.Offers)
+                .WithOne(o => o.User)
+                .HasForeignKey(o => o.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Product>()
+                .HasMany<Offer>(u => u.Offers)
+                .WithOne(o => o.Product)
+                .HasForeignKey(o => o.ProductId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Order>()
+                .HasOne<User>(u => u.User)
+                .WithMany(o => o.Orders)
+                .HasForeignKey(o => o.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
+
         }
     }
 }

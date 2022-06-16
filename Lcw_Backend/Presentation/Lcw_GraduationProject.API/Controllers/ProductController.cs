@@ -40,6 +40,13 @@ namespace Lcw_GraduationProject.API.Controllers
             return Ok(product);
         }
 
+        [HttpGet("myproducts/{id}")]
+        public async Task<IActionResult> MyProducts(string id)
+        {
+            var products = productReadRepository.GetMyProducts(id);
+            return Ok(products);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
@@ -49,7 +56,8 @@ namespace Lcw_GraduationProject.API.Controllers
                 Price=model.Price,
                 CategoryId=Guid.Parse(model.CategoryId),
                 UserId=Guid.Parse(model.UserId),
-                IsSold=false
+                IsSold=false,
+                IsOfferable=model.isOfferable
             });
             await productWriteRepository.SaveAsync();
             return StatusCode((int)HttpStatusCode.Created);
@@ -61,6 +69,7 @@ namespace Lcw_GraduationProject.API.Controllers
             Product product = await productReadRepository.GetByIdAsync(model.Id);
             product.Name = model.Name;
             product.Price = model.Price;
+            product.IsOfferable = model.isOfferable;
             await productWriteRepository.SaveAsync(); //tracking mekanizması çalışacağından bunu update olarak işleyecek. Mevcut update metotu tracking olmadığı yani verinin context aracılığı ile db den gelmediği durumlarda kullanılır.
             return Ok();
         }

@@ -11,7 +11,6 @@ namespace Lcw_GraduationProject.UI.Controllers
     public class HomeController : Controller
     {
 
-        string baseUrl = "https://localhost:7061/";
         public ActionResult Index()
         {
             if (HttpContext.Session.GetString("isLogin")==null)
@@ -20,7 +19,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             IEnumerable<VM_Get_Product> products = new List<VM_Get_Product>();
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
 
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {Request.Cookies["jwt"]}");
                 var a=client.DefaultRequestHeaders.Authorization.ToString();

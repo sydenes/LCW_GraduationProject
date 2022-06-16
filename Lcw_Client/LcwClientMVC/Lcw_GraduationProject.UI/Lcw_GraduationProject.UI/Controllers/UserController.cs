@@ -12,11 +12,14 @@ namespace Lcw_GraduationProject.UI.Controllers
 {
     public class UserController : Controller
     {
-        string baseUrl = "https://localhost:7061/";
         [HttpGet]
         public IActionResult Index() //LoginHome
         {
-            //ViewBag.Login = Constants.loginControl;
+            string userId = HttpContext.Session.GetString("userId");
+            if (userId != null)
+            {
+                return RedirectToAction(nameof(Index), "Home");
+            }
             return View();
         }
         [HttpPost]
@@ -26,7 +29,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri(baseUrl);
+                    client.BaseAddress = new Uri(Constants.baseUrl);
                     var responseTask = client.PostAsJsonAsync<VM_Create_User>($"api/user/", user);
                     responseTask.Wait();
 
@@ -55,7 +58,7 @@ namespace Lcw_GraduationProject.UI.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.PostAsJsonAsync<VM_Create_User>($"api/user/Login", user);
                 responseTask.Wait();
 
@@ -84,7 +87,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             List< VM_Get_OfferDetail > offers = new List< VM_Get_OfferDetail >();
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.GetAsync($"api/offer/useroffers/{userId}");
                 responseTask.Wait();
 
@@ -105,7 +108,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             List<VM_Get_OfferDetail> offers = new List<VM_Get_OfferDetail>();
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(baseUrl);
+                client.BaseAddress = new Uri(Constants.baseUrl);
                 var responseTask = client.GetAsync($"api/offer/othersoffers/{userId}");
                 responseTask.Wait();
 

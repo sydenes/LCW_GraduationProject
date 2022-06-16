@@ -47,6 +47,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/MyProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNeVByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -57,6 +61,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOffer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HaXZlT2ZmZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOfferOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HaXZlT2ZmZXJPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOrder.cshtml]

@@ -3,6 +3,7 @@
     public class Constants
     {
        public static bool loginControl = true;
+       public static string baseUrl = "https://localhost:7061/";
     }
     public enum Constants2
     {

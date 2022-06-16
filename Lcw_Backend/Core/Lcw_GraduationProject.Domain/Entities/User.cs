@@ -10,5 +10,6 @@ namespace Lcw_GraduationProject.Domain.Entities
         public string Password { get; set; }
         public ICollection<Order> Orders { get; set; }
         public ICollection<Product> Products { get; set; }
+        public ICollection<Offer> Offers { get; set; }
     }
 }

@@ -35,15 +35,17 @@ namespace Lcw_GraduationProject.API.Controllers
         {
             return Ok(await offerReadRepository.GetByIdAsync(id, false));
         }
-        [HttpGet("{id}/{userId}")]
+        [HttpGet("{productId}/{userId}")]
         public IActionResult GetOffer(string productId,string userId)
         {
-            return Ok(offerReadRepository.ReadOffer(productId, userId));
+            var offer = offerReadRepository.ReadOffer(productId, userId);
+            return Ok(offer);
         }
         [HttpGet("useroffers/{userId}")]
         public IActionResult GetOfferList(string userId)
         {
-            return Ok(offerReadRepository.OfferList(userId));
+            var offerList = offerReadRepository.OfferList(userId);
+            return Ok(offerList);
         }
         [HttpGet("othersoffers/{userId}")]
         public IActionResult GetOthersOfferList(string userId)
@@ -102,6 +104,15 @@ namespace Lcw_GraduationProject.API.Controllers
             offer.IsActive = false;
             var deletedOffer=await offerWriteRepository.SaveAsync();
             if (deletedOffer > 0) return Ok();
+            return BadRequest();
+        }
+        [HttpGet("approve/{id}")]
+        public async Task<IActionResult> ApproveOffer(string id)
+        {
+            var offer = await offerReadRepository.GetByIdAsync(id, false);
+            offer.Status = 1;
+            var approvedOffer = await offerWriteRepository.SaveAsync();
+            if (approvedOffer > 0) return Ok();
             return BadRequest();
         }
     }

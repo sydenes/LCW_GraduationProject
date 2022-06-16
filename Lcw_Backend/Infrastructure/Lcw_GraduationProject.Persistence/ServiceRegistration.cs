@@ -19,7 +19,8 @@ namespace Lcw_GraduationProject.Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection services) //Reference vermeden extension metotlar ile register ederek iletişim kuruyoruz
         {
-            services.AddDbContext<LcwAPIDbContext>(options => options.UseNpgsql(Configurations.ConnectionString),ServiceLifetime.Singleton);
+            //services.AddDbContext<LcwAPIDbContext>(options => options.UseNpgsql(Configurations.ConnectionString),ServiceLifetime.Singleton);
+            services.AddDbContext<LcwAPIDbContext>(options => options.UseSqlServer(Configurations.ConnectionString),ServiceLifetime.Singleton);
             services.AddScoped<IUserReadRepository,UserReadRepository>();
             services.AddScoped<IUserWriteRepository,UserWriteRepository>();
             services.AddScoped<IOrderReadRepository,OrderReadRepository>();

@@ -23,7 +23,9 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Offers
         {
             List<VM_Get_OfferDetail> offerDetails = new List<VM_Get_OfferDetail>();
             VM_Get_OfferDetail offer;
-            var offers = _context.Offers.Include(t => t.Product).ThenInclude(t => t.User).Where(o => o.UserId == Guid.Parse(userId)).ToList();
+            var offers = _context.Offers.Include(t => t.Product)
+                .ThenInclude(t => t.User)
+                .Where(o => o.UserId == Guid.Parse(userId) && o.IsActive).ToList();
 
             foreach (var item in offers)
             {
@@ -32,7 +34,8 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Offers
                 offer.ProductName = item.Product.Name;
                 offer.Id = item.Id.ToString();
                 offer.Price = item.Price;
-                //offer.Status = item.Status; //TODO:eklenecek
+                offer.Status = item.Status;
+                offer.ProductId = item.ProductId.ToString();
                 offerDetails.Add(offer);
             }
             return offerDetails;
@@ -42,7 +45,7 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Offers
             List<VM_Get_OfferDetail> offerDetails = new List<VM_Get_OfferDetail>();
             VM_Get_OfferDetail offer;
             var productIdList = _context.Products.Where(t => t.UserId == Guid.Parse(userId)).Select(t => t.Id).ToList();
-            var offers = _context.Offers.Include(t => t.Product).ThenInclude(t => t.User).Where(o => productIdList.Contains(o.ProductId)).ToList();
+            var offers = _context.Offers.Include(t => t.Product).ThenInclude(t => t.User).Where(o => productIdList.Contains(o.ProductId) && o.IsActive).ToList();
             foreach (var item in offers)
             {
                 offer = new VM_Get_OfferDetail();
@@ -50,6 +53,8 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Offers
                 offer.ProductName = item.Product.Name;
                 offer.Id = item.Id.ToString();
                 offer.Price = item.Price;
+                offer.Status = item.Status;
+                offer.ProductId = item.ProductId.ToString();
                 offerDetails.Add(offer);
             }
             return offerDetails;
@@ -57,7 +62,7 @@ namespace Lcw_GraduationProject.Persistence.Repositories.Offers
 
         public Offer ReadOffer(string productId, string userId)
         {
-            return _context.Offers.Where(o=>o.ProductId==Guid.Parse(productId) && o.UserId==Guid.Parse(userId) && o.IsActive==true).FirstOrDefault();
+            return _context.Offers.Where(o => o.ProductId == Guid.Parse(productId) && o.UserId == Guid.Parse(userId) && o.IsActive == true).FirstOrDefault();
         }
     }
 }

@@ -50,9 +50,8 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Approve Offer", "ApproveOffer","Offer", new { id=item.Id }) |
+                @Html.ActionLink("Reject Offer", "WithdrawOffer","Offer", new { id=item.Id}) |
             </td>
         </tr>
 }

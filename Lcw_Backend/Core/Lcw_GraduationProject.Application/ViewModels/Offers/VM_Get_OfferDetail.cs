@@ -10,6 +10,7 @@ namespace Lcw_GraduationProject.Application.ViewModels.Offers
     {
         public string Id { get; set; }
         public string ProductName { get; set; }
+        public string ProductId { get; set; }
         public string UserName { get; set; } //TODO: Tabloda isim+soyisim kolonu açılıp o alan basılacak
         public float Price { get; set; }
         public int Status { get; set; }

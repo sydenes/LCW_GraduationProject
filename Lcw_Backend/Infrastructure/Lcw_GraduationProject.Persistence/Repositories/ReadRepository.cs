@@ -31,8 +31,7 @@ namespace Lcw_GraduationProject.Persistence.Repositories
             var query = Table.AsQueryable();
             if (!tracking)
                 query = query.AsNoTracking();
-            var a = await Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
-            return a;
+            return await Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
         }
 
         public async Task<T> GetSingleAsync(Expression<Func<T, bool>> filter, bool tracking = true)

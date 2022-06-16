@@ -1,4 +1,5 @@
-﻿using Lcw_GraduationProject.UI.Models.Order;
+﻿using Lcw_GraduationProject.UI.Models;
+using Lcw_GraduationProject.UI.Models.Order;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -8,7 +9,6 @@ namespace Lcw_GraduationProject.UI.Controllers
 {
     public class OrderController : Controller
     {
-        string baseUrl = "https://localhost:7061/";
 
         [HttpGet]
         public IActionResult Index() 
@@ -23,7 +23,7 @@ namespace Lcw_GraduationProject.UI.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri(baseUrl);
+                    client.BaseAddress = new Uri(Constants.baseUrl);
                     var responseTask = client.PostAsJsonAsync<VM_Create_Order>($"api/order/", order);
                     responseTask.Wait();
 
