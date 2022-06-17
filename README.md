@@ -1,8 +1,8 @@
 # LCW_GraduationProject
 E-commerce project
 Projeyi ayağa kaldırmak için:
-1-	Backend API  appsettings.json MsSQL tanımlamasındaki ‘Server’ bilgisini kendi MsSQL server adı ile değiştiriniz.
-2-	Package Manager Console  Default Project  Persistence katmanı seçilir.
+1-	Backend -> API -> appsettings.json -> MsSQL tanımlamasındaki ‘Server’ bilgisini kendi MsSQL server adı ile değiştiriniz.
+2-	Package Manager Console -> Default Project -> Persistence katmanı seçilir.
 3-	Add-migration v1.1 veya EntityFramework6\Add-Migration v1.1 komutu girilerek migration oluşturulur.
 4-	Update-database komutu ile MsSQL’de ‘VestiyerDB’ ve tablolar oluşturulur.
 5-	API projesi çalıştırıldıktan sonra UI için MVC projesi çalıştırılır.
