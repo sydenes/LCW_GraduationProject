@@ -8,101 +8,101 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lcw_GraduationProject.UI
 build_property.RootNamespace = Lcw_GraduationProject.UI
-build_property.ProjectDir = C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI\
+build_property.ProjectDir = C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\enes.sagban\Desktop\MyDocs\Lcw_GraduationProject\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI
+build_property.MSBuildProjectDirectory = C:\Users\Enes\Documents\GitHub\LCW_GraduationProject\Lcw_Client\LcwClientMVC\Lcw_GraduationProject.UI\Lcw_GraduationProject.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Home/Index.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Home/Privacy.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Order/Index.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Create.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Delete.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Details.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Edit.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Index.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/MyProducts.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Product/MyProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNeVByb2R1Y3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/Error.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_colors.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_colors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9jb2xvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOffer.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOffer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HaXZlT2ZmZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOfferOrder.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOfferOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HaXZlT2ZmZXJPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOrder.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_GiveOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HaXZlT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_MostHitProducts.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_MostHitProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Nb3N0SGl0UHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_SlideBar.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_SlideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TbGlkZUJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/User/Index.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/User/MyOffers.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/User/MyOffers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNeU9mZmVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/User/OthersOffers.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/User/OthersOffers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxPdGhlcnNPZmZlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/_ViewImports.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/_ViewStart.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enes.sagban/Desktop/MyDocs/Lcw_GraduationProject/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_Layout.cshtml]
+[C:/Users/Enes/Documents/GitHub/LCW_GraduationProject/Lcw_Client/LcwClientMVC/Lcw_GraduationProject.UI/Lcw_GraduationProject.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uke10ndmje

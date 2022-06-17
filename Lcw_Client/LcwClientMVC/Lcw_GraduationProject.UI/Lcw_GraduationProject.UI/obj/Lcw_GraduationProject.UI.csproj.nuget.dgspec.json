@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj": {}
+    "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj": {
+    "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
         "projectName": "Lcw_GraduationProject.UI",
-        "projectPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
-        "packagesPath": "C:\\Users\\enes.sagban\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enes.sagban\\Desktop\\MyDocs\\Lcw_GraduationProject\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\obj\\",
+        "projectPath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI.csproj",
+        "packagesPath": "C:\\Users\\Enes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enes\\Documents\\GitHub\\LCW_GraduationProject\\Lcw_Client\\LcwClientMVC\\Lcw_GraduationProject.UI\\Lcw_GraduationProject.UI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\enes.sagban\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dincerlogistic/_packaging/dincerlogistic/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -80,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
